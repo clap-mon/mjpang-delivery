@@ -47,47 +47,19 @@ button:focus-visible {
   min-height: 100vh;
   padding: 20px clamp(12px, 3vw, 32px);
   color: var(--ink);
-  background:
-    radial-gradient(ellipse 90% 60% at 50% -10%, rgba(255, 235, 175, 0.72) 0%, transparent 70%),
-    radial-gradient(circle 520px at 8% 40%, rgba(255, 235, 175, 0.35) 0%, transparent 60%),
-    radial-gradient(circle 520px at 92% 70%, rgba(255, 182, 222, 0.25) 0%, transparent 60%),
-    linear-gradient(155deg, #fbf7ea 0%, #f3ebd0 48%, #eae0bf 100%);
+  background: radial-gradient(circle at 77% 18%, #3f33a4 0, transparent 36%), linear-gradient(135deg, #0b0922, #121642 58%, #15102f);
   overflow-x: hidden;
+  display: grid;
+  place-items: center;
 }
 .setup-page::before {
   content: "";
   position: absolute;
   inset: 0;
-  opacity: 0.22;
-  background-image: repeating-linear-gradient(
-    0deg,
-    #bca271 0px, #bca271 1.5px,
-    transparent 1.5px, transparent 13px,
-    #bca271 13px, #bca271 14.5px,
-    transparent 14.5px, transparent 26px,
-    #bca271 26px, #bca271 27.5px,
-    transparent 27.5px, transparent 39px,
-    #bca271 39px, #bca271 40.5px,
-    transparent 40.5px, transparent 52px,
-    #bca271 52px, #bca271 53.5px,
-    transparent 53.5px, transparent 116px
-  );
-  pointer-events: none;
-}
-.setup-page::after {
-  content: "𝄞      ♩      ♬      ♪      𝄢      ♫      𝄡      𝄞      ♪      ♩      ♬";
-  position: absolute;
-  inset: 0;
-  font-size: 32px;
-  font-family: serif;
-  color: #8c7343;
   opacity: 0.12;
-  letter-spacing: 48px;
-  line-height: 116px;
-  overflow: hidden;
+  background-image: linear-gradient(#8b80ff33 1px, transparent 1px), linear-gradient(90deg, #8b80ff33 1px, transparent 1px);
+  background-size: 28px 28px;
   pointer-events: none;
-  white-space: nowrap;
-  padding-left: 24px;
 }
 .setup-shell {
   position: relative;
